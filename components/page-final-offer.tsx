@@ -183,7 +183,7 @@ export default function PageFinalOffer({ unlockedBonuses, userVirtue }: PageFina
               {/* Pricing */}
               <div className="flex items-center gap-3 sm:gap-4 flex-wrap">
                 <span className="text-2xl sm:text-3xl font-bold line-through text-red-500">$67</span>
-                <span className="text-4xl sm:text-5xl font-bold text-green-500">$11.97</span>
+                <span className="text-4xl sm:text-5xl font-bold text-green-500">$8.97</span>
               </div>
             </div>
           </div>
@@ -264,9 +264,9 @@ export default function PageFinalOffer({ unlockedBonuses, userVirtue }: PageFina
             </div>
             <div className="text-center pt-4">
               <p className="mb-2 text-sm sm:text-base text-slate-600">Tu inversión de hoy:</p>
-              <p className="text-4xl sm:text-5xl font-bold text-[rgba(0,213,11,1)]">$11.97</p>
+              <p className="text-4xl sm:text-5xl font-bold text-[rgba(0,213,11,1)]">$8.97</p>
               <p className="text-sm sm:text-base text-success-foreground mt-2 font-semibold text-red-400">
-                ¡Ahorras $129.03!
+                ¡Ahorras $132.03!
               </p>
             </div>
           </div>
