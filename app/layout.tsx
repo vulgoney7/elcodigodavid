@@ -1,31 +1,34 @@
-import type React from "react"
-import { Geist, Playfair_Display } from "next/font/google"
-import "./globals.css"
+import type React from "react";
+// A importação está correta
+import { GeistSans } from 'geist/font/sans';
+import { Playfair_Display } from "next/font/google";
+import "./globals.css";
 
-const geistSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
-})
-
+// CORREÇÃO: Não chame GeistSans como uma função.
+// Ela já é o objeto da fonte que precisamos.
+// Apenas a fonte do Google Fonts (Playfair) precisa ser chamada como função.
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
-})
+});
 
 export const metadata = {
   title: "El Código David - Fortalece la Fe de tu Hijo",
   description: "Guía completa para padres que desean blindar la fe de sus hijos",
-    generator: 'v0.app'
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${geistSans.variable} ${playfair.variable}`}>
-      <body className="font-sans antialiased bg-background text-foreground">{children}</body>
+    // CORREÇÃO: Use a variável da GeistSans diretamente.
+    <html lang="es" className={`${GeistSans.variable} ${playfair.variable}`}>
+      <body className="font-sans antialiased bg-background text-foreground">
+        {children}
+      </body>
     </html>
-  )
+  );
 }
+
