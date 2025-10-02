@@ -17,7 +17,7 @@ export default function PageFinalOffer({ unlockedBonuses, userVirtue }: PageFina
   const [lastBuyer, setLastBuyer] = useState("")
   const [timeLeft, setTimeLeft] = useState(15 * 60) // 15 minutes in seconds
 
-  const CHECKOUT_URL = "https://pay.hotmart.com/B102214875A" // Replace with your actual checkout URL
+  const CHECKOUT_URL = "https://pay.hotmart.com/B102214875A" // Replace with your actual checkout URL 
 
   const latinNames = [
     "María González",
